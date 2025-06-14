@@ -11,7 +11,7 @@ import (
 )
 
 func PageHandler(w http.ResponseWriter, r *http.Request) {
-	data, err := os.ReadFile("/projects/go1fl-sprint6-final-tpl/go1fl-sprint6-final-tpl/index.html")
+	data, err := os.ReadFile("go1fl-sprint6-final-tpl/go1fl-sprint6-final-tpl/index.html")
 	if err != nil {
 		http.Error(w, "ошибка при загрузке страницы", http.StatusInternalServerError)
 		return
